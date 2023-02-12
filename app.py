@@ -2,7 +2,7 @@ import requests
 import json
 import streamlit as st
 
-response = requests.get('https://meme-api.com/gimme/PublicFlashing')
+response = requests.get('https://meme-api.com/gimme/Memes')
 
 if response.status_code == 200:
     content = response.content.decode('utf-8')
@@ -13,8 +13,8 @@ else:
 
 st.set_page_config(page_title="Random Imgur Image", page_icon=":guardsman:", layout="wide")
 
-st.header("Random Imgur Image")
-if st.button("r/sexybutnotporn"):
+st.header("Random meme generator")
+if st.button("generate"):
 
     st.image(img_url, width=300)
 
