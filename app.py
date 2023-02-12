@@ -15,5 +15,5 @@ st.set_page_config(page_title="Random Imgur Image", page_icon=":guardsman:", lay
 
 st.header("Random Imgur Image")
 
-st.image(img_url, width=600)
+st.image(img_url, width=300)
 
