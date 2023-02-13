@@ -18,6 +18,8 @@ if st.button("Go!"):
             data = json.loads(content)
             img_url = data['url']
             st.image(img_url, width=300)
+        else:
+            st.text("Failed to retrive data. Check if the subreddit exists")
 
 
       
