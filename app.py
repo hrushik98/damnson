@@ -19,7 +19,7 @@ if st.button("Go!"):
             img_url = data['url']
             st.image(img_url, width=300)
         else:
-            st.warning("Failed to retrive data. Check if the subreddit exists")
+            st.warning("Failed to retrive data. Check if the subreddit exists.")
 
 
       
