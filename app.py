@@ -26,5 +26,5 @@ if st.button("Go!"):
 
     
 
-    st.image(img_url, width=400)
+    st.image(img_url, width=300)
 
