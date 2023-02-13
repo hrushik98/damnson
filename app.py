@@ -23,6 +23,6 @@ if st.button("Go!"):
 
       
 
-    st.image(img_url, width=300)
+       st.image(img_url, width=300)
     except:
         st.warning("Enter a valid subreddit name!")
