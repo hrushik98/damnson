@@ -19,12 +19,10 @@ if st.button("Go!"):
             img_url = data['url']
         else:
             print('Failed to retrieve data')
-    except:
-        st.warning("Enter a valid subreddit name!")
 
-    
 
-    
+      
 
     st.image(img_url, width=300)
-
+    except:
+        st.warning("Enter a valid subreddit name!")
