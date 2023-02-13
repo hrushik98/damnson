@@ -17,12 +17,11 @@ if st.button("Go!"):
             content = response.content.decode('utf-8')
             data = json.loads(content)
             img_url = data['url']
-        else:
-            print('Failed to retrieve data')
+            st.image(img_url, width=300)
 
 
       
 
-       st.image(img_url, width=300)
+       
     except:
         st.warning("Enter a valid subreddit name!")
